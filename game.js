@@ -1,8 +1,7 @@
 var health = 100;
-function slap()
-    while (health > 0) {
-          
-      health = health - 1;
-    }
+function slap() {
     
-    console.log(slap);
+    health = health - 1;
+    alert(health);
+}
+
