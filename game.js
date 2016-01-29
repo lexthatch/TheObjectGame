@@ -1,52 +1,36 @@
 var health = 100;
-function Player(name, health, hit) {
+var Player = function(name, health, hit) {
   this.name = name || "anonymous";
   this.health = health || 100;
   this.hit = hit || 0;
   this.enemy = "everyone";
   this.setname = function (){
       document.getElementById("sName").textContent = this.name;
+      
+  };
+  this.slap = function(){
+      this.health--;
+      this.hit++;
+      this.update();
+  };
+   this.kick = function(){
+      this.health -= 5;
+      this.hit++;
+      this.update();
+  };
+   this.punch = function(){
+      this.health -= 10;
+      this.hit++;
+      this.update();
+  };
+  this.update = function(){
+      var node = document.getElementById("sHealth");
+      node.innerText = this.health.toString();
+      document.getElementById("sHit").textContent = this.hit;
   }
 }
 var newPlayer = new Player ("Doom", 100, 0);
 newPlayer.setname()
-function slap() {
-    
-    health = health - 1;
-    //alert(health);
-    update ();
-}
 
-var health = 100;
-function punch() {
-    
-    health = health - 5;
-    //alert(health);
-    update ();
-}
-
-var health = 100;
-function kick() {
-    
-    health = health - 10;
-    //alert(health);
-    update ();
-}
-
-
-function update(){
-    var node = document.getElementById("sHealth");
-node.innerText = health.toString();
-}
-
-update ();
-
-
-function hits() {
-    
-    hits = 0;
-    //alert(health);
-    update ();
-}
 
 
