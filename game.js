@@ -1,4 +1,15 @@
 var health = 100;
+function Player(name, health, hit) {
+  this.name = name || "anonymous";
+  this.health = health || 100;
+  this.hit = hit || 0;
+  this.enemy = "everyone";
+  this.setname = function (){
+      document.getElementById("sName").textContent = this.name;
+  }
+}
+var newPlayer = new Player ("Doom", 100, 0);
+newPlayer.setname()
 function slap() {
     
     health = health - 1;
@@ -31,7 +42,6 @@ node.innerText = health.toString();
 update ();
 
 
-var name = ("Don");
 function hits() {
     
     hits = 0;
@@ -39,9 +49,4 @@ function hits() {
     update ();
 }
 
-function Player(name, health, hit) {
-  this.name = name || "anonymous";
-  this.health = health || 100;
-  this.hit = hit || 0;
-  this.enemy = "everyone";
-}
+
