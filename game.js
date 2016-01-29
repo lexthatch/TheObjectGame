@@ -27,6 +27,11 @@ var Player = function(name, health, hit) {
       var node = document.getElementById("sHealth");
       node.innerText = this.health.toString();
       document.getElementById("sHit").textContent = this.hit;
+      if( this.health <= 20){
+         document.getElementById("player-panel").classList.add("panel-danger")
+    }else{
+         document.getElementById("player-panel").classList.remove("panel-danger")
+    }
   }
 }
 var newPlayer = new Player ("Doom", 100, 0);
