@@ -8,7 +8,7 @@ var items = {
     shield:new Item("Shield",0.3,"Down and dirty, bitch"),
     nailBoard:new Item("Nail Board",0.5,"I'll make you bleed."),
     tazer:new Item("Tazer",0.8, "Dance m*therf*cker!"),
-    yourMom:new Item("Your Mom", -0.9,"Your Mama is so ...."),
+    yourMom:new Item("Your Mom", 0.01,"Your Mama is so ...."),
 }
 
 var health = 100;
