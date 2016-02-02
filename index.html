@@ -2,41 +2,41 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-    crossorigin="anonymous">
-    <link rel="stylesheet" href="game.css">
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="game.css">
 
 </head>
 
 <body>
-
-    <div class="panel panel-default">
-        <div class="panel-heading"  >
-            <h3 class="panel-title"> 
-                
-                Health: <span id="sHealth"></span>
-                  <p> <span id = "sName"></span><br></p>
-                   
-            </h3>
-        </div>
-        <div class="panel-body" id = "player-panel">
-            <img src="http://stickfigure.co/1024/clip-art-of-a-stick-figure-person-character-wearing-a-giant-glove-and-waving-by-nl-shop-486.jpg"
-            style=width:200px>
-        </div>
+  <div class="container">
+  <div class="panel" id="player-panel">
+    <div class="panel-heading">
+      <div class="panel-title"> 
+        <p>Health: <span id="sHealth"></span></p>
+        <p>Name: <span id = "sName"></span></p>
+        <p>Hits: <span id = "sHit"></span></p>
+      </div>
+    </div>
+    
+    <div class="panel-body">
+      <img src="http://stickfigure.co/1024/clip-art-of-a-stick-figure-person-character-wearing-a-giant-glove-and-waving-by-nl-shop-486.jpg"
+      style=width:200px>
     </div>
 
     <div class="panel-footer">
-        <button onClick="newPlayer.slap()">Slap</button>
-        <button onClick="newPlayer.kick()">Kick</button>
-        <button onClick="newPlayer.punch()">Punch</button>
-    </div>
+      <button onClick="newPlayer.slap()">Slap</button>
+      <button onClick="newPlayer.kick()">Kick</button>
+      <button onClick="newPlayer.punch()">Punch</button>
     </div>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-    crossorigin="anonymous"></script>
-    <script src="game.js"></script>
+  </div>
+</div>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+  crossorigin="anonymous"></script>
+  <script src="game.js"></script>
 </body>
 
 </html>
